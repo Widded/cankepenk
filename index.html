@@ -2,30 +2,25 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Can Kepenk | İstanbul Otomatik Kepenk İmalatı & 7/24 Acil Servis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+  <title>Can Kepenk | İstanbul Otomatik Kepenk İmalatı & 7/24 Servis</title>
   
-  <!-- SEO & Meta -->
-  <meta name="description" content="Can Kepenk Sistemleri - İstanbul genelinde otomatik dükkan kepengi, çelik mağaza kepenkleri, motorlu garaj kapısı imalatı, 7/24 acil tamir servisi ve ücretsiz yerinde keşif.">
-  <meta name="keywords" content="can kepenk, otomatik kepenk istanbul, kepenk tamiri, dükkan kepengi, motorlu kepenk fiyatları, 7/24 kepenk servisi, garaj kapısı, galvaniz kepenk">
+  <meta name="description" content="Can Kepenk Sistemleri - İstanbul genelinde otomatik dükkan kepengi, motorlu garaj kapısı imalatı ve 7/24 acil tamir servisi.">
+  <meta name="keywords" content="can kepenk, otomatik kepenk istanbul, kepenk tamiri, dükkan kepengi, motorlu kepenk, garaj kapısı">
   <meta name="author" content="Can Kepenk Sistemleri">
   <meta name="theme-color" content="#FFFFFF">
   
-  <!-- Open Graph -->
-  <meta property="og:title" content="Can Kepenk | İstanbul Otomatik Kepenk İmalatı & 7/24 Servis">
-  <meta property="og:description" content="İş yeriniz için sağlam çelik güvencesi! Otomatik kepenk, garaj kapısı imalatı ve 30 dakikada acil servis desteği.">
+  <meta property="og:title" content="Can Kepenk | İstanbul Otomatik Kepenk İmalatı">
+  <meta property="og:description" content="İstanbul genelinde otomatik kepenk imalatı, montajı ve 7/24 acil servis.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="tr_TR">
   
-  <!-- Google Fonts: Outfit (Headings) & Inter (Body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
   
-  <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
   
-  <!-- Structured Data: LocalBusiness -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -36,1059 +31,576 @@
     "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Demirciler Sanayi Sitesi",
       "addressLocality": "İstanbul",
-      "addressRegion": "İstanbul",
-      "postalCode": "34000",
       "addressCountry": "TR"
     },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 41.0082,
-      "longitude": 28.9784
-    },
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
-        ],
-        "opens": "00:00",
-        "closes": "23:59"
-      }
-    ],
-    "areaServed": {
-      "@type": "City",
-      "name": "İstanbul"
-    },
-    "description": "İstanbul genelinde TSE standartlarında çelik ve alüminyum otomatik kepenk imalatı, montajı ve 7/24 mobil acil tamir servisi."
+    "areaServed": { "@type": "City", "name": "İstanbul" },
+    "description": "İstanbul genelinde otomatik kepenk imalatı, montajı ve 7/24 mobil acil tamir servisi."
   }
   </script>
 </head>
-<body class="light-theme">
+<body>
 
-  <!-- ==================== TOP BAR & HEADER ==================== -->
-  <header class="site-header" id="header">
-    <div class="header-container">
-      <a href="#" class="brand-logo" aria-label="Can Kepenk Ana Sayfa">
-        <img src="assets/logo.svg" alt="Can Kepenk Logo" width="220" height="48">
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="#" class="logo" aria-label="Ana Sayfa">
+        <img src="assets/logo.svg" alt="Can Kepenk" width="200" height="48">
       </a>
       
-      <!-- Desktop Navigation -->
-      <nav class="nav-menu" id="nav-menu">
-        <a href="#modeller" class="nav-link">Modellerimiz</a>
-        <a href="#simulator" class="nav-link nav-highlight">⚡ Canlı Simülatör</a>
-        <a href="#hizmetler" class="nav-link">Hizmetlerimiz</a>
-        <a href="#kesif" class="nav-link">Hızlı Keşif</a>
+      <nav class="nav" id="nav-menu">
+        <a href="#hizmetler" class="nav-link">Hizmetler</a>
+        <a href="#modeller" class="nav-link">Ürünler</a>
+        <a href="#neden-biz" class="nav-link">Neden Biz</a>
         <a href="#referanslar" class="nav-link">Referanslar</a>
         <a href="#sss" class="nav-link">S.S.S.</a>
         <a href="#iletisim" class="nav-link">İletişim</a>
       </nav>
       
-      <!-- Quick Action Buttons -->
       <div class="header-actions">
-        <a href="tel:+905320000000" class="btn-emergency-call" id="header-call-btn" title="7/24 Acil Çağrı">
-          <span class="phone-pulse-icon">📞</span>
-          <div class="btn-call-text">
-            <span class="btn-subtext">7/24 ACİL SERVİS</span>
-            <span class="btn-maintext">0532 000 00 00</span>
-          </div>
+        <a href="tel:+905320000000" class="btn-header-call" id="header-call-btn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>0532 000 00 00</span>
         </a>
-        <a href="https://wa.me/905320000000?text=Merhaba%20Can%20Kepenk,%20otomatik%20kepenk%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="btn-whatsapp-header" id="header-wa-btn">
-          <svg class="icon-wa" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-            <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/>
-          </svg>
-          <span>WhatsApp Teklif</span>
+        <a href="https://wa.me/905320000000?text=Merhaba%20Can%20Kepenk,%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="btn-header-wa" id="header-wa-btn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          <span>WhatsApp</span>
         </a>
-        <button class="mobile-toggle" id="mobile-toggle" aria-label="Menüyü Aç">
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Menü">
           <span></span><span></span><span></span>
         </button>
       </div>
     </div>
   </header>
 
-  <!-- ==================== HERO SECTION (SPLIT 2-COLUMN CORPORATE) ==================== -->
-  <section class="hero-section" id="hero">
-    <div class="hero-container">
-      
-      <!-- Left Column: Copy & Actions -->
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="container hero-inner">
       <div class="hero-content">
-        <div class="hero-badge">
-          <span class="badge-dot"></span>
-          <span>İSTANBUL'UN RESMİ OTOMATİK KEPENK İMALATÇISI</span>
-        </div>
+        <p class="hero-eyebrow">Kaliteli Kepenk, Garantili İşçilik.</p>
+        <h1 class="hero-title">İş yeriniz için<br><span class="accent">çelik güvencesi.</span></h1>
+        <p class="hero-desc">Galvaniz çelik ve alüminyum motorlu kepenk imalatı, montajı ve 7/24 acil tamir. Yerinde ücretsiz keşif, 2 yıl garanti.</p>
         
-        <h1 class="hero-title">
-          İş Yeriniz ve Mağazanız İçin <br>
-          <span class="text-accent">Çelik Güvencesi: Can Kepenk</span>
-        </h1>
-        
-        <p class="hero-subtitle">
-          İstanbul genelinde galvaniz çelik ve alüminyum motorlu kepenk sistemlerinde <strong>yerinde ücretsiz keşif</strong>, <strong>2 yıl birebir değişim garantisi</strong> ve 30 dakikada <strong>7/24 acil mobil teknik servis</strong> desteği. Fiyatı doğrudan ustasıyla konuşun, sağlam çözüme fabrikadan doğrudan ulaşın!
-        </p>
-        
-        <!-- Action Buttons -->
-        <div class="hero-cta-group">
-          <a href="#kesif" class="btn-primary-hero">
-            <span class="btn-icon">📋</span>
-            <div class="btn-text-block">
-              <strong>Ücretsiz Keşif & Fiyat İste</strong>
-              <small>İstanbul'un her ilçesine aynı gün keşif</small>
-            </div>
+        <div class="hero-actions">
+          <a href="#kesif" class="btn btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            Ücretsiz Keşif İste
           </a>
-          
-          <a href="https://wa.me/905320000000?text=Merhaba%20Can%20Kepenk,%20d%C3%BCkkan%C4%B1m%C4%B1n%20%C3%B6l%C3%A7%C3%BCs%C3%BCn%C3%BC%20ve%20foto%C4%9Fraf%C4%B1n%C4%B1%20g%C3%B6nderip%20fiyat%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="btn-wa-hero">
-            <span class="btn-icon">💬</span>
-            <div class="btn-text-block">
-              <strong>WhatsApp'tan Fotoğraf/Ölçü At</strong>
-              <small>Fotoğrafını gönderin, anında fiyat alın</small>
-            </div>
+          <a href="https://wa.me/905320000000?text=Merhaba%20Can%20Kepenk,%20fiyat%20bilgisi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            WhatsApp'tan Sor
           </a>
         </div>
-        
-        <!-- Trust Tags -->
-        <div class="hero-trust-tags">
-          <span class="trust-tag"><span class="check-icon">✓</span> 2 Yıl Parça Garantisi</span>
-          <span class="trust-tag"><span class="check-icon">✓</span> 30 Dk Acil Servis</span>
-          <span class="trust-tag"><span class="check-icon">✓</span> Elektriksiz Manuel Açma</span>
-          <span class="trust-tag"><span class="check-icon">✓</span> TSE Onaylı İmalat</span>
-        </div>
-      </div>
 
-      <!-- Right Column: Visual Frame with Real Storefront Photo -->
-      <div class="hero-visual-card">
-        <div class="visual-img-wrap">
-          <img src="assets/images/hero_shop.jpg" alt="Can Kepenk İstanbul Mağaza Montajı" class="hero-main-img" width="600" height="400">
-          
-          <!-- Floating Badge Top -->
-          <div class="floating-badge badge-top">
-            <span class="fb-icon">🛡️</span>
-            <div>
-              <strong>2 YIL TAM GARANTİ</strong>
-              <small>Birebir Parça & Motor Değişimi</small>
-            </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-value">2 Yıl</span>
+            <span class="stat-label">Garanti</span>
           </div>
-
-          <!-- Floating Badge Bottom -->
-          <div class="floating-badge badge-bottom">
-            <span class="fb-icon">⚡</span>
-            <div>
-              <strong>30 DAKİKADA SERVİS</strong>
-              <small>İstanbul'un 39 İlçesinde 7/24</small>
-            </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-value">30 dk</span>
+            <span class="stat-label">Acil Servis</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-value">2.500+</span>
+            <span class="stat-label">Montaj</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-value">7/24</span>
+            <span class="stat-label">Hizmet</span>
           </div>
         </div>
       </div>
 
-    </div>
-  </section>
-
-  <!-- ==================== LIVE METRIC COUNTERS ==================== -->
-  <section class="metrics-section" id="sayaclar">
-    <div class="metrics-container">
-      <div class="metrics-grid">
-        <div class="metric-card">
-          <div class="metric-icon">🛡️</div>
-          <div class="metric-content">
-            <span class="metric-value">2 YIL</span>
-            <span class="metric-title">Birebir Değişim Garantisi</span>
-            <span class="metric-sub">Motor ve mekanik aksamda tam güvence</span>
-          </div>
-        </div>
-        
-        <div class="metric-card">
-          <div class="metric-icon">⏱️</div>
-          <div class="metric-content">
-            <span class="metric-value">30 DK</span>
-            <span class="metric-title">Acil Mobil Servis</span>
-            <span class="metric-sub">İstanbul geneli 7/24 anında müdahale</span>
-          </div>
-        </div>
-        
-        <div class="metric-card">
-          <div class="metric-icon">🏭</div>
-          <div class="metric-content">
-            <span class="metric-value">2.500+</span>
-            <span class="metric-title">Başarılı Montaj</span>
-            <span class="metric-sub">Kuyumcu, mağaza, fabrika ve garaj</span>
-          </div>
-        </div>
-        
-        <div class="metric-card">
-          <div class="metric-icon">📐</div>
-          <div class="metric-content">
-            <span class="metric-value">%100</span>
-            <span class="metric-title">Ücretsiz Yerinde Keşif</span>
-            <span class="metric-sub">Lazerle net ölçüm ve numune profil</span>
-          </div>
-        </div>
+      <div class="hero-visual">
+        <img src="assets/images/kepenk-ref-9.jpg" alt="Can Kepenk Montaj" class="hero-img" width="600" height="400">
       </div>
     </div>
   </section>
 
-  <!-- ==================== ARCHITECTURAL INTERACTIVE SHUTTER SIMULATOR ==================== -->
-  <section class="simulator-section" id="simulator">
-    <div class="section-container">
-      <div class="section-title-wrap text-center">
-        <span class="section-tag">CANLI ETKİLEŞİMLİ DENEYİM</span>
-        <h2 class="section-heading">Can Kepenk Sanal Vitrin & Kumanda Simülatörü</h2>
-        <p class="section-lead">
-          Kumandadaki tuşlara basarak otomatik kepenginizin çalışma prensibini deneyimleyin! İstediğiniz RAL rengini ve profil tipini seçin, beğendiğiniz kombinasyon için doğrudan WhatsApp'tan teklif isteyin.
-        </p>
-      </div>
-
-      <div class="simulator-stage-wrap">
-        
-        <!-- LEFT: Virtual Storefront Visualizer (Clean Architectural Light Frame) -->
-        <div class="storefront-box">
-          <div class="storefront-roof">
-            <div class="hood-box">
-              <div class="hood-plate">
-                <span class="hood-badge">CAN KEPENK • SARMAL TAMBUR KUTUSU</span>
-              </div>
-            </div>
-          </div>
-          
-          <div class="storefront-aperture">
-            <!-- Left Guide Rail -->
-            <div class="guide-rail rail-left"></div>
-            
-            <!-- Storefront Interior Window -->
-            <div class="store-interior">
-              <div class="store-sign">CAN KEPENK SHOWROOM</div>
-              <div class="store-display-items">
-                <div class="display-mannequin">👕</div>
-                <div class="display-shelf">
-                  <div class="shelf-item">💎</div>
-                  <div class="shelf-item">📱</div>
-                  <div class="shelf-item">⌚</div>
-                </div>
-                <div class="display-light"></div>
-              </div>
-              <div class="store-floor"></div>
-            </div>
-
-            <!-- Shutter Curtain (Animated) -->
-            <div class="shutter-curtain color-anthracite" id="shutter-curtain" style="height: 100%;">
-              <div class="slat-lines">
-                <div class="bottom-slat">
-                  <div class="bottom-rubber-seal"></div>
-                  <div class="bottom-lock-handles">
-                    <span class="lock-handle"></span>
-                    <span class="key-slot">🔒</span>
-                    <span class="lock-handle"></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Right Guide Rail -->
-            <div class="guide-rail rail-right"></div>
-          </div>
-
-          <!-- Bottom Pavement -->
-          <div class="storefront-pavement">
-            <div class="pavement-line"></div>
-          </div>
-
-          <!-- Live Shutter Status Overlay -->
-          <div class="simulator-status-bar">
-            <span class="status-dot status-closed" id="shutter-status-dot"></span>
-            <span class="status-text" id="shutter-status-text">Durum: Kepenk Kilitli (Maksimum Güvenlik)</span>
-            <span class="status-pos" id="shutter-pos-pct">%0 Açık</span>
-          </div>
-        </div>
-
-        <!-- RIGHT: Modern Minimalist Remote Controller & Studio Customizer -->
-        <div class="simulator-controls-box">
-          
-          <!-- Tactile Clean Remote Controller -->
-          <div class="remote-device">
-            <div class="remote-top-loop">
-              <span class="keychain-ring"></span>
-            </div>
-            
-            <div class="remote-body">
-              <div class="remote-brand">
-                <span>CAN KEPENK</span>
-                <div class="remote-led" id="remote-led" title="Kumanda Sinyal Işığı"></div>
-              </div>
-
-              <!-- Remote Action Buttons -->
-              <div class="remote-buttons">
-                <button class="remote-btn btn-up" id="btn-shutter-up" title="Kepengi Yukarı Kaldır">
-                  <span class="remote-arrow">▲</span>
-                  <span class="remote-btn-lbl">AÇ</span>
-                </button>
-                
-                <button class="remote-btn btn-stop" id="btn-shutter-stop" title="Kepengi Durdur">
-                  <span class="remote-arrow">■</span>
-                  <span class="remote-btn-lbl">DURDUR</span>
-                </button>
-                
-                <button class="remote-btn btn-down" id="btn-shutter-down" title="Kepengi Aşağı İndir">
-                  <span class="remote-arrow">▼</span>
-                  <span class="remote-btn-lbl">KAPAT</span>
-                </button>
-              </div>
-
-              <div class="remote-footer">
-                <span class="remote-freq">433.92 MHz • Rolling Kod Güvenliği</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Simulator Options: Color & Profile Type -->
-          <div class="simulator-customizer">
-            
-            <!-- Color Selector -->
-            <div class="customizer-group">
-              <label class="customizer-label">🎨 Kepenk Rengi:</label>
-              <div class="color-options" id="color-options">
-                <button class="color-swatch-btn active" data-color="anthracite" data-color-name="Antrasit Gri (RAL 7016)">
-                  <span class="swatch-circle swatch-anthracite"></span>
-                  <span class="swatch-name">Antrasit (7016)</span>
-                </button>
-                <button class="color-swatch-btn" data-color="silver" data-color-name="Metalik Çelik Gümüş (RAL 9006)">
-                  <span class="swatch-circle swatch-silver"></span>
-                  <span class="swatch-name">Çelik Gümüş</span>
-                </button>
-                <button class="color-swatch-btn" data-color="black" data-color-name="Gece Siyahı (RAL 9005)">
-                  <span class="swatch-circle swatch-black"></span>
-                  <span class="swatch-name">Gece Siyahı</span>
-                </button>
-                <button class="color-swatch-btn" data-color="white" data-color-name="Saf Beyaz (RAL 9016)">
-                  <span class="swatch-circle swatch-white"></span>
-                  <span class="swatch-name">Saf Beyaz</span>
-                </button>
-              </div>
-            </div>
-
-            <!-- Profile Slat Type -->
-            <div class="customizer-group">
-              <label class="customizer-label">⚙️ Profil Tipi:</label>
-              <div class="type-options" id="type-options">
-                <button class="type-btn active" data-type="solid" data-type-name="Dolu Çelik Profil (Maksimum Emniyet)">
-                  <span class="type-icon">🛡️</span>
-                  <div class="type-meta">
-                    <strong>Dolu Çelik Profil</strong>
-                    <small>Maksimum Hırsızlık Koruması</small>
-                  </div>
-                </button>
-                <button class="type-btn" data-type="perforated" data-type-name="Mikro Delikli Perfore Profil (Vitrin Görünen)">
-                  <span class="type-icon">✨</span>
-                  <div class="type-meta">
-                    <strong>Mikro Delikli Vitrin</strong>
-                    <small>Kapalıyken Işıklı Vitrin Görünür</small>
-                  </div>
-                </button>
-              </div>
-            </div>
-
-            <!-- Sound Toggle & Quote CTA -->
-            <div class="simulator-sound-toggle">
-              <label class="toggle-checkbox">
-                <input type="checkbox" id="sound-toggle" checked>
-                <span class="toggle-text">🔊 Gerçekçi Motor ve Röle Sesi</span>
-              </label>
-            </div>
-
-            <div class="simulator-cta-box">
-              <button class="btn-simulator-quote" id="btn-quote-from-simulator">
-                <span>💬 Bu Modeli WhatsApp'tan Sor</span>
-                <small id="simulator-selection-summary">Seçim: Antrasit Gri • Dolu Çelik</small>
-              </button>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== PRODUCT MODELS (HIGH-END CORPORATE CARDS) ==================== -->
-  <section class="products-section" id="modeller">
-    <div class="section-container">
-      <div class="section-title-wrap text-center">
-        <span class="section-tag">İMALATINI YAPTIĞIMIZ SİSTEMLER</span>
-        <h2 class="section-heading">Can Kepenk Ürün Modellerimiz</h2>
-        <p class="section-lead">
-          Kendi atölyemizde birinci sınıf galvaniz çelik ve alüminyum profillerle üretilen, sessiz motor teknolojisine sahip uzun ömürlü kepenk sistemleri.
-        </p>
-      </div>
-
-      <div class="products-grid">
-        
-        <!-- Product 1: Storefront Roller Shutter -->
-        <div class="product-card">
-          <div class="product-image-wrap">
-            <img src="assets/images/hero_shop.jpg" alt="Otomatik Dükkan & Mağaza Kepengi" class="p-card-img" width="500" height="280">
-            <span class="product-badge">EN ÇOK TERCİH EDİLEN</span>
-          </div>
-          <div class="product-body">
-            <div class="product-header">
-              <h3 class="product-title">Otomatik Dükkan & Mağaza Kepengi</h3>
-            </div>
-            <p class="product-desc">
-              Kuyumcular, eczaneler, marketler ve cadde mağazaları için darbelere, levye zorlamalarına ve hırsızlığa karşı tam güvenlikli galvaniz çelik sarmal kepenkler.
-            </p>
-            <ul class="product-specs">
-              <li><span>Sac Kalınlığı:</span> 0.8 mm - 1.2 mm ST-37 Galvaniz Çelik</li>
-              <li><span>Motor:</span> Sessiz tüp motor (Mosel/Somfy)</li>
-              <li><span>Boya:</span> Elektrostatik fırın boya (Paslanmaz)</li>
-              <li><span>Güvenlik:</span> Alttan kilitli etek profili + çift kumanda</li>
-              <li><span>Garanti:</span> 2 Yıl Birebir Değişim</li>
-            </ul>
-            <a href="#kesif" class="btn-card-action">Bu Model İçin Keşif İste</a>
-          </div>
-        </div>
-
-        <!-- Product 2: Automatic Garage Doors -->
-        <div class="product-card">
-          <div class="product-image-wrap">
-            <img src="assets/images/garage_door.jpg" alt="Otomatik Garaj & Otopark Kapıları" class="p-card-img" width="500" height="280">
-            <span class="product-badge badge-blue">VİLLA & OTOPARK</span>
-          </div>
-          <div class="product-body">
-            <div class="product-header">
-              <h3 class="product-title">Otomatik Garaj & Otopark Kapıları</h3>
-            </div>
-            <p class="product-desc">
-              Apartman, site ve müstakil villalar için aracınızdan inmeden tek tuşla açabileceğiniz, yaylı tambur sistemli ve emniyet fotoselli sarmal garaj kapıları.
-            </p>
-            <ul class="product-specs">
-              <li><span>Güvenlik:</span> Emniyet fotoseli (Araç görünce durur)</li>
-              <li><span>Açılış Hızı:</span> Saniyede 18-22 cm konforlu hareket</li>
-              <li><span>Elektrik Kesintisi:</span> Manuel kilitli krikolu açma kolu</li>
-              <li><span>Kumanda:</span> 50 metre menzilli kopyalanamaz kumanda</li>
-              <li><span>Garanti:</span> 2 Yıl Mekanik & Motor Garantisi</li>
-            </ul>
-            <a href="#kesif" class="btn-card-action">Bu Model İçin Keşif İste</a>
-          </div>
-        </div>
-
-        <!-- Product 3: Polyurethane Insulated Shutters -->
-        <div class="product-card">
-          <div class="product-image-wrap">
-            <img src="assets/images/hero_shop.jpg" alt="Poliüretanlı İzolasyonlu Kepenk" class="p-card-img" width="500" height="280">
-            <span class="product-badge badge-green">ISI & SES YALITIMLI</span>
-          </div>
-          <div class="product-body">
-            <div class="product-header">
-              <h3 class="product-title">Poliüretanlı İzolasyonlu Kepenk & Panjur</h3>
-            </div>
-            <p class="product-desc">
-              İçi yüksek yoğunluklu poliüretan köpük dolgulu ekstrüzyon alüminyum lameller. Kışın ısıyı korur, yazın serin tutar, cadde gürültüsünü %60 keser.
-            </p>
-            <ul class="product-specs">
-              <li><span>İzolasyon:</span> 45 kg/m³ yoğunlukta CFC içermeyen poliüretan</li>
-              <li><span>Profil:</span> Çift cidarlı güçlendirilmiş alüminyum</li>
-              <li><span>Avantaj:</span> %45'e varan kışlık ısı tasarrufu</li>
-              <li><span>Çalışma:</span> Fısıltı sessizliğinde özel fitilli raylar</li>
-              <li><span>Garanti:</span> 2 Yıl Birebir Değişim</li>
-            </ul>
-            <a href="#kesif" class="btn-card-action">Bu Model İçin Keşif İste</a>
-          </div>
-        </div>
-
-        <!-- Product 4: Industrial Heavy-Duty -->
-        <div class="product-card">
-          <div class="product-image-wrap">
-            <img src="assets/images/industrial_door.jpg" alt="Endüstriyel Fabrika & Depo Kepenkleri" class="p-card-img" width="500" height="280">
-            <span class="product-badge badge-dark">AĞIR HİZMET TİPİ</span>
-          </div>
-          <div class="product-body">
-            <div class="product-header">
-              <h3 class="product-title">Endüstriyel Fabrika & Depo Kepenkleri</h3>
-            </div>
-            <p class="product-desc">
-              Yüksek metrajlı fabrika girişleri, antrepolar, hangar ve lojistik depolar için zincirli sanayi tipi tüp motorlu ve harici panolu sarmal kapılar.
-            </p>
-            <ul class="product-specs">
-              <li><span>Genişlik:</span> 12 metreye kadar tek parça imalat imkanı</li>
-              <li><span>Motor:</span> Yüksek torklu zincirli sanayi tipi motor</li>
-              <li><span>Rüzgar Dayanımı:</span> Fırtına kancalı rüzgar kilit profilleri</li>
-              <li><span>Acil Durum:</span> Manuel zincir çekme mekanizması</li>
-              <li><span>Garanti:</span> 2 Yıl Ağır Hizmet Garantisi</li>
-            </ul>
-            <a href="#kesif" class="btn-card-action">Bu Model İçin Keşif İste</a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== 7/24 SERVICES SECTION ==================== -->
-  <section class="services-section" id="hizmetler">
-    <div class="section-container">
-      <div class="section-title-wrap text-center">
-        <span class="section-tag emergency-tag">🚨 İSTANBUL GENELİ ACİL SERVİS</span>
-        <h2 class="section-heading">7/24 Acil Kepenk Tamiri & Uzmanlık Hizmetlerimiz</h2>
-        <p class="section-lead">
-          Dükkanınızın kepengi askıda mı kaldı? Motoru mu yandı? Kumandası mı bozuldu? Can Kepenk mobil servis araçlarımızla <strong>30 dakikada adresteyiz!</strong>
-        </p>
+  <!-- SERVICES -->
+  <section class="section" id="hizmetler">
+    <div class="container">
+      <div class="section-header center">
+        <p class="section-eyebrow">Hizmetler</p>
+        <h2 class="section-title">Neler Yapıyoruz</h2>
       </div>
 
       <div class="services-grid">
-        
-        <!-- Service 1: 24/7 Emergency Repair -->
-        <div class="service-card emergency-service">
-          <div class="service-icon-box">🚨</div>
-          <h3 class="service-title">7/24 Acil Kepenk Tamiri</h3>
-          <p class="service-desc">
-            Kapanmayan, açılmayan, raydan çıkan veya lamelleri sıkışan kepenklere gece-gündüz fark etmeksizin ortalama 30 dakikada acil yerinde müdahale.
-          </p>
-          <div class="service-badge-pill">⚡ Ortalama Varış: 30 Dakika</div>
-        </div>
-
-        <!-- Service 2: Motor Replacement -->
         <div class="service-card">
-          <div class="service-icon-box">⚡</div>
-          <h3 class="service-title">Motor & Alıcı Kart Değişimi</h3>
-          <p class="service-desc">
-            Yanmış veya gücü yetmeyen eski motorların sökülmesi, yerine orijinal garantili Mosel / Somfy tüp motor montajı ve alıcı beyin ayarı.
-          </p>
-          <div class="service-badge-pill">🛡️ 2 Yıl Orijinal Parça Garantisi</div>
+          <div class="service-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Kepenk İmalatı & Montajı</h3>
+          <p>Galvaniz çelik ve alüminyum profillerle kendi atölyemizde üretim. 24-48 saatte anahtar teslim.</p>
         </div>
 
-        <!-- Service 3: UPS Power Supply -->
         <div class="service-card">
-          <div class="service-icon-box">🔋</div>
-          <h3 class="service-title">Kepenk Güç Kaynağı (UPS)</h3>
-          <p class="service-desc">
-            Elektrikler kesildiğinde dükkanda mahsur kalmayın! Akülü kesintisiz güç ünitesi ile kepenginizi 3-4 gün boyunca rahatça açıp kapatın.
-          </p>
-          <div class="service-badge-pill">🔌 Elektriksiz 72 Saat Çalışma</div>
+          <div class="service-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <h3>7/24 Acil Tamir</h3>
+          <p>İstanbul genelinde açılmayan veya sıkışan kepenklere ortalama 30 dakikada müdahale.</p>
         </div>
 
-        <!-- Service 4: Remote Copying -->
         <div class="service-card">
-          <div class="service-icon-box">📻</div>
-          <h3 class="service-title">Yedek Kumanda Kopyalama & Kodlama</h3>
-          <p class="service-desc">
-            Kayıp veya kırık kumandalarınızın yerine, kopyalanamayan yüksek güvenlikli rolling kodlu yeni yedek kumandaların anında kodlanması.
-          </p>
-          <div class="service-badge-pill">🔑 Yerinde 5 Dakikada Teslim</div>
+          <div class="service-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+          </div>
+          <h3>Motor & Elektronik Değişimi</h3>
+          <p>Orijinal Mosel / Somfy motor montajı, alıcı kart değişimi ve kumanda kodlama.</p>
         </div>
 
-        <!-- Service 5: Free Discovery -->
         <div class="service-card">
-          <div class="service-icon-box">📐</div>
-          <h3 class="service-title">Ücretsiz Yerinde Keşif & Lazer Ölçüm</h3>
-          <p class="service-desc">
-            İstanbul'un 39 ilçesine kendi servis aracımızla gelerek lazer metre ile net ölçü alıyor, yanımızda getirdiğimiz profil numunelerini gösteriyoruz.
-          </p>
-          <div class="service-badge-pill">📍 %100 Ücretsiz & Bağlayıcılığı Yok</div>
+          <div class="service-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="6" width="18" height="12" rx="2" ry="2"/><line x1="23" y1="13" x2="23" y2="11"/></svg>
+          </div>
+          <h3>UPS Güç Kaynağı</h3>
+          <p>Elektrik kesildiğinde akülü güç ünitesi ile kepenginizi 72 saat boyunca kullanın.</p>
         </div>
 
-        <!-- Service 6: Maintenance -->
         <div class="service-card">
-          <div class="service-icon-box">🛠️</div>
-          <h3 class="service-title">Periyodik Bakım & Yay Revizyonu</h3>
-          <p class="service-desc">
-            Ömrü dolan yayların değişimi, kılavuz rayların yağlanması, kilit mekanizmalarının ve sarmal tambur rulmanlarının revizyonu ile ömür uzatma.
-          </p>
-          <div class="service-badge-pill">⚙️ Sessiz ve Sorunsuz Çalışma</div>
+          <div class="service-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg>
+          </div>
+          <h3>Kumanda Kopyalama</h3>
+          <p>Rolling kodlu yedek kumanda yerinde 5 dakikada kodlanıp teslim edilir.</p>
         </div>
 
-      </div>
-
-      <!-- Emergency Call Banner -->
-      <div class="emergency-banner">
-        <div class="banner-content">
-          <span class="banner-badge">7/24 ACİL ÇAĞRI HATTI</span>
-          <h3>Kepenginiz Acil Olarak Açılmıyor veya Kapanmıyor mu?</h3>
-          <p>Ustanızı doğrudan cepten arayın, en yakın mobil ekibimizi hemen dükkanınıza yönlendirelim.</p>
-        </div>
-        <div class="banner-actions">
-          <a href="tel:+905320000000" class="btn-banner-call">
-            <span>📞 0532 000 00 00</span>
-            <small>7/24 Kesintisiz Usta Hattı</small>
-          </a>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <h3>Bakım & Yay Revizyonu</h3>
+          <p>Periyodik bakım ile yay değişimi, ray yağlama ve tambur rulman revizyonu.</p>
         </div>
       </div>
-
     </div>
   </section>
 
-  <!-- ==================== DISCOVERY & CONTACT FORM ==================== -->
-  <section class="lead-section" id="kesif">
-    <div class="section-container">
+  <!-- PRODUCTS -->
+  <section class="section section-warm" id="modeller">
+    <div class="container">
+      <div class="section-header center">
+        <p class="section-eyebrow">Ürünler</p>
+        <h2 class="section-title">İmalat Yaptığımız Sistemler</h2>
+        <p class="section-subtitle">Kendi atölyemizde birinci sınıf malzeme ile üretilen kepenk ve kapı sistemleri.</p>
+      </div>
+
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="assets/images/kepenk-ref-2.jpg" alt="Otomatik Galvaniz Paslanmaz Çelik Kepenk" loading="lazy">
+            <span class="product-badge">En Çok Tercih Edilen</span>
+          </div>
+          <div class="product-body">
+            <h3>Otomatik Galvaniz Paslanmaz Çelik Kepenk</h3>
+            <p>Dükkan, mağaza ve iş yerleri için yüksek güvenlikli, paslanmaz galvaniz çelik sarmal kepenkler.</p>
+            <ul class="specs">
+              <li><strong>Malzeme:</strong> Galvaniz Çelik</li>
+              <li><strong>Motor:</strong> Mosel / Somfy</li>
+              <li><strong>Boya:</strong> Elektrostatik Fırın</li>
+              <li><strong>Garanti:</strong> 2 Yıl</li>
+            </ul>
+            <a href="#kesif" class="btn btn-sm">Keşif İste</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="assets/images/kepenk-ref-9.jpg" alt="Alüminyum Otomatik Kepenk" loading="lazy">
+            <span class="product-badge badge-secondary">Modern & Estetik</span>
+          </div>
+          <div class="product-body">
+            <h3>Alüminyum Otomatik Kepenk</h3>
+            <p>Mağaza, vitrin ve konutlar için estetik, hafif ve korozyona dayanıklı alüminyum profiller.</p>
+            <ul class="specs">
+              <li><strong>Profil:</strong> Ekstrüzyon Alüminyum</li>
+              <li><strong>Motor:</strong> Sessiz Tüp Motor</li>
+              <li><strong>Kumanda:</strong> 50m Menzil</li>
+              <li><strong>Garanti:</strong> 2 Yıl</li>
+            </ul>
+            <a href="#kesif" class="btn btn-sm">Keşif İste</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="assets/images/kepenk-ref-6.jpg" alt="Zincirli Otomatik Kepenk" loading="lazy">
+            <span class="product-badge badge-dark">Ağır Hizmet</span>
+          </div>
+          <div class="product-body">
+            <h3>Zincirli Otomatik Kepenk</h3>
+            <p>Fabrika, depo ve geniş sanayi yapıları için harici zincirli motorlu yüksek dayanımlı sistemler.</p>
+            <ul class="specs">
+              <li><strong>Kullanım:</strong> Fabrika & Depo</li>
+              <li><strong>Motor:</strong> Sanayi Tipi Zincirli</li>
+              <li><strong>Dayanım:</strong> Rüzgar Kilitli</li>
+              <li><strong>Garanti:</strong> 2 Yıl</li>
+            </ul>
+            <a href="#kesif" class="btn btn-sm">Keşif İste</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="assets/images/kepenk-ref-10.jpg" alt="Otomatik Hızlı Branda Tente Kepenk" loading="lazy">
+            <span class="product-badge badge-tertiary">Yüksek Hızlı</span>
+          </div>
+          <div class="product-body">
+            <h3>Otomatik Hızlı Branda Tente Kepenk</h3>
+            <p>Yoğun araç ve personel geçişi olan tesisler için hızlı açılıp kapanan PVC branda sarmal kapılar.</p>
+            <ul class="specs">
+              <li><strong>Hız:</strong> 1.0 - 1.5 m/sn</li>
+              <li><strong>Gövde:</strong> Güçlü PVC & Vizör</li>
+              <li><strong>Güvenlik:</strong> Emniyet Fotoseli</li>
+              <li><strong>Garanti:</strong> 2 Yıl</li>
+            </ul>
+            <a href="#kesif" class="btn btn-sm">Keşif İste</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEDEN CAN KEPENK -->
+  <section class="section section-warm" id="neden-biz">
+    <div class="container why-split">
+      <div class="why-header">
+        <p class="section-eyebrow">Farkımız</p>
+        <h2 class="section-title">Neden Can Kepenk?</h2>
+        <p class="why-lead">Yılların getirdiği tecrübe ve kaliteli malzeme seçimiyle, İstanbul'un her noktasına güvenli kepenk çözümleri sunuyoruz.</p>
+      </div>
+
+      <div class="why-list">
+        <div class="why-row">
+          <span class="why-num">01</span>
+          <div class="why-text">
+            <h3>Kaliteli Malzeme</h3>
+            <p>Kepenk sistemlerinde uzun ömürlü, aşınmaya dayanıklı ve kullanıma en uygun malzemeleri tercih ediyoruz.</p>
+          </div>
+        </div>
+        <div class="why-row">
+          <span class="why-num">02</span>
+          <div class="why-text">
+            <h3>Garantili İşçilik</h3>
+            <p>Yaptığımız tüm montaj ve tamir işlemlerinde titiz ve özenli işçiliği ön planda tutuyoruz.</p>
+          </div>
+        </div>
+        <div class="why-row">
+          <span class="why-num">03</span>
+          <div class="why-text">
+            <h3>Titiz Montaj</h3>
+            <p>Her uygulamayı kullanım alanının gereksinimlerine göre en ince ayrıntısına kadar planlayarak gerçekleştiriyoruz.</p>
+          </div>
+        </div>
+        <div class="why-row">
+          <span class="why-num">04</span>
+          <div class="why-text">
+            <h3>Hızlı Servis</h3>
+            <p>Arıza ve acil bakım ihtiyaçlarında, mobil ekiplerimizle mümkün olan en kısa sürede kalıcı çözüm sunuyoruz.</p>
+          </div>
+        </div>
+        <div class="why-row">
+          <span class="why-num">05</span>
+          <div class="why-text">
+            <h3>Müşteri Memnuniyeti</h3>
+            <p>İşimizi yalnızca montajla bitirmiyor, satış sonrası destekte de müşteri memnuniyetini hedefliyoruz.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section section-warm" id="surec">
+    <div class="container">
+      <div class="section-header center">
+        <p class="section-eyebrow">Süreç</p>
+        <h2 class="section-title">Nasıl Çalışıyoruz</h2>
+      </div>
+
+      <div class="process-strip">
+        <div class="process-card">
+          <div class="step-number">ADIM 01</div>
+          <h3>Keşif</h3>
+          <p>Aynı gün dükkanınıza gelir, lazer ölçüm yapar, profil numunelerini sunarız.</p>
+        </div>
+        <div class="process-card">
+          <div class="step-number">ADIM 02</div>
+          <h3>İmalat</h3>
+          <p>Atölyemizde projeye özel ebatlama, fırın boyası ve motor testleri yapılır.</p>
+        </div>
+        <div class="process-card">
+          <div class="step-number">ADIM 03</div>
+          <h3>Montaj</h3>
+          <p>24-48 saat içinde ekibimiz ortalama 3-4 saatte montajı tamamlar.</p>
+        </div>
+        <div class="process-card">
+          <div class="step-number">ADIM 04</div>
+          <h3>Garanti</h3>
+          <p>2 yıl boyunca motor ve mekanik arızalara ücretsiz mobil servis.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section" id="referanslar">
+    <div class="container">
+      <div class="section-header center">
+        <p class="section-eyebrow">Referanslar</p>
+        <h2 class="section-title">Tamamlanan Projeler</h2>
+      </div>
+
+      <div class="gallery-tabs" id="gallery-tabs">
+        <button class="tab-btn active" data-filter="all">Tümü</button>
+        <button class="tab-btn" data-filter="galvaniz">Galvaniz Çelik</button>
+        <button class="tab-btn" data-filter="zincirli">Zincirli Kepenk</button>
+        <button class="tab-btn" data-filter="aluminyum">Alüminyum Kepenk</button>
+        <button class="tab-btn" data-filter="branda">Hızlı Branda Kepenk</button>
+      </div>
+
+      <div class="gallery-grid" id="gallery-grid">
+        <div class="gallery-card" data-category="galvaniz">
+          <div class="card-visual" style="background:url('assets/images/kepenk-ref-1.png') center/cover"></div>
+          <div class="card-info"><p>Otomatik Galvaniz Paslanmaz Çelik</p></div>
+        </div>
+        <div class="gallery-card" data-category="galvaniz">
+          <div class="card-visual" style="background:url('assets/images/kepenk-ref-2.jpg') center/cover"></div>
+          <div class="card-info"><p>Otomatik Galvaniz Paslanmaz Çelik</p></div>
+        </div>
+        <div class="gallery-card" data-category="galvaniz">
+          <div class="card-visual" style="background:url('assets/images/kepenk-ref-3.jpg') center/cover"></div>
+          <div class="card-info"><p>Otomatik Galvaniz Paslanmaz Çelik</p></div>
+        </div>
+        <div class="gallery-card" data-category="galvaniz">
+          <div class="card-visual" style="background:url('assets/images/kepenk-ref-4.jpg') center/cover"></div>
+          <div class="card-info"><p>Otomatik Galvaniz Paslanmaz Çelik</p></div>
+        </div>
+        <div class="gallery-card" data-category="galvaniz">
+          <div class="card-visual" style="background:url('assets/images/kepenk-ref-5.jpg') center/cover"></div>
+          <div class="card-info"><p>Otomatik Galvaniz Paslanmaz Çelik</p></div>
+        </div>
+        <div class="gallery-card" data-category="zincirli">
+          <div class="card-visual" style="background:url('assets/images/kepenk-ref-6.jpg') center/cover"></div>
+          <div class="card-info"><p>Zincirli Otomatik Kepenk</p></div>
+        </div>
+        <div class="gallery-card" data-category="zincirli">
+          <div class="card-visual" style="background:url('assets/images/kepenk-ref-7.jpg') center/cover"></div>
+          <div class="card-info"><p>Zincirli Otomatik Kepenk</p></div>
+        </div>
+        <div class="gallery-card" data-category="zincirli">
+          <div class="card-visual" style="background:url('assets/images/kepenk-ref-8.jpg') center/cover"></div>
+          <div class="card-info"><p>Zincirli Otomatik Kepenk</p></div>
+        </div>
+        <div class="gallery-card" data-category="aluminyum">
+          <div class="card-visual" style="background:url('assets/images/kepenk-ref-9.jpg') center/cover"></div>
+          <div class="card-info"><p>Alüminyum Otomatik Kepenk</p></div>
+        </div>
+        <div class="gallery-card" data-category="branda">
+          <div class="card-visual" style="background:url('assets/images/kepenk-ref-10.jpg') center/cover"></div>
+          <div class="card-info"><p>Otomatik Hızlı Branda Tente Kepenk</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-warm" id="kesif">
+    <div class="container">
       <div class="lead-box">
-        
-        <!-- Left: Why Call/WhatsApp Directly -->
         <div class="lead-info">
-          <span class="section-tag">FİYAT USTAYLA KONUŞULUR</span>
-          <h2 class="lead-heading">Hızlı Keşif ve Fiyat Teklifi İsteyin</h2>
-          <p class="lead-desc">
-            Kepenk imalatında net fiyat; dükkanınızın en-boy ölçüsü, montaj zemini ve seçeceğiniz motor gücüne göre belirlenir. Otomatik hesaplayıcılar esnafı yanıltır!
-          </p>
+          <p class="section-eyebrow">Teklif</p>
+          <h2 class="section-title">Keşif ve Fiyat İsteyin</h2>
+          <p class="lead-desc">Fiyatlar ölçü, malzeme ve motor gücüne göre değişir. WhatsApp'tan fotoğraf atın, ustanız 5 dakikada net fiyatı çıkarsın.</p>
           
           <div class="lead-features">
-            <div class="lead-feature-item">
-              <span class="lf-icon">📸</span>
-              <div>
-                <strong>Fotoğraf & Ölçü Atın:</strong>
-                <p>Dükkan cephenizin fotoğrafını WhatsApp'tan gönderin, ustanız 5 dakikada en doğru fiyatı çıkarsın.</p>
-              </div>
+            <div class="lead-feature">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+              <div><strong>Fotoğraf & ölçü atın</strong><p>Dükkan cephenizin fotoğrafını gönderin.</p></div>
             </div>
-            
-            <div class="lead-feature-item">
-              <span class="lf-icon">🚐</span>
-              <div>
-                <strong>Kapınıza Gelelim:</strong>
-                <p>İstanbul'un neresinde olursanız olun aynı gün ücretsiz keşfe gelip yerinde lazerle ölçelim.</p>
-              </div>
+            <div class="lead-feature">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div><strong>Kapınıza geliyoruz</strong><p>Aynı gün ücretsiz keşif ve lazer ölçüm.</p></div>
             </div>
-            
-            <div class="lead-feature-item">
-              <span class="lf-icon">🤝</span>
-              <div>
-                <strong>Doğrudan İmalatçı Fiyatı:</strong>
-                <p>Aracı, komisyoncu yok! Kendi imalathanemizden doğrudan ilk elden en uygun fiyat garantisi.</p>
-              </div>
+            <div class="lead-feature">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              <div><strong>Doğrudan imalatçı fiyatı</strong><p>Aracı yok, ilk elden uygun fiyat.</p></div>
             </div>
           </div>
         </div>
 
-        <!-- Right: Modern Form Card -->
         <div class="lead-form-wrap">
           <form class="lead-form" id="contact-form">
-            <h3 class="form-title">📋 Hızlı Talep Oluşturun</h3>
-            <p class="form-subtitle">Bilgileri doldurun, ustanız anında WhatsApp'tan veya telefonla dönüş yapsın.</p>
+            <h3 class="form-title">Hızlı Talep Oluşturun</h3>
+            <p class="form-subtitle">Bilgilerinizi doldurun, ustanız size dönsün.</p>
             
-            <!-- Service Type Selector -->
             <div class="form-group">
-              <label for="service-type">İhtiyacınız Olan Hizmet:</label>
+              <label for="service-type">Hizmet</label>
               <select id="service-type" class="form-control" required>
-                <option value="Yeni Dükkan/Mağaza Kepengi İmalatı">Yeni Dükkan/Mağaza Kepengi İmalatı</option>
-                <option value="Otomatik Garaj Kapısı">Otomatik Garaj Kapısı</option>
-                <option value="7/24 Acil Kepenk Tamiri">7/24 Acil Kepenk Tamiri (Arıza/Kilitlenme)</option>
-                <option value="Kepenk Motor & Beyin Değişimi">Kepenk Motor & Beyin Değişimi</option>
-                <option value="Kumanda Kopyalama & UPS Güç Kaynağı">Kumanda Kopyalama & UPS Güç Kaynağı</option>
-                <option value="Ücretsiz Yerinde Keşif Talebi">Ücretsiz Yerinde Keşif Talebi</option>
+                <option value="Otomatik Galvaniz Paslanmaz Çelik Kepenk">Otomatik Galvaniz Paslanmaz Çelik Kepenk</option>
+                <option value="Alüminyum Otomatik Kepenk">Alüminyum Otomatik Kepenk</option>
+                <option value="Zincirli Otomatik Kepenk">Zincirli Otomatik Kepenk</option>
+                <option value="Otomatik Hızlı Branda Tente Kepenk">Otomatik Hızlı Branda Tente Kepenk</option>
+                <option value="7/24 Acil Kepenk Tamiri">7/24 Acil Kepenk Tamiri</option>
+                <option value="Motor & Kumanda Değişimi">Motor & Kumanda Değişimi</option>
+                <option value="Ücretsiz Yerinde Keşif">Ücretsiz Yerinde Keşif</option>
               </select>
             </div>
 
-            <!-- District Selector -->
             <div class="form-group">
-              <label for="district-select">Hizmet İstediğiniz İstanbul İlçesi:</label>
+              <label for="district-select">İlçe</label>
               <select id="district-select" class="form-control" required>
-                <option value="" disabled selected>İlçe Seçiniz...</option>
+                <option value="" disabled selected>İlçe seçiniz</option>
                 <optgroup label="Avrupa Yakası">
-                  <option value="Avcılar">Avcılar</option>
-                  <option value="Bağcılar">Bağcılar</option>
-                  <option value="Bahçelievler">Bahçelievler</option>
-                  <option value="Bakırköy">Bakırköy</option>
-                  <option value="Başakşehir">Başakşehir</option>
-                  <option value="Bayrampaşa">Bayrampaşa</option>
-                  <option value="Beşiktaş">Beşiktaş</option>
-                  <option value="Beylikdüzü">Beylikdüzü</option>
-                  <option value="Beyoğlu">Beyoğlu</option>
-                  <option value="Büyükçekmece">Büyükçekmece</option>
-                  <option value="Esenler">Esenler</option>
-                  <option value="Esenyurt">Esenyurt</option>
-                  <option value="Eyüpsultan">Eyüpsultan</option>
-                  <option value="Fatih">Fatih</option>
-                  <option value="Gaziosmanpaşa">Gaziosmanpaşa</option>
-                  <option value="Güngören">Güngören</option>
-                  <option value="Kağıthane">Kağıthane</option>
-                  <option value="Küçükçekmece">Küçükçekmece</option>
-                  <option value="Sarıyer">Sarıyer</option>
-                  <option value="Silivri">Silivri</option>
-                  <option value="Sultangazi">Sultangazi</option>
-                  <option value="Şişli">Şişli</option>
-                  <option value="Zeytinburnu">Zeytinburnu</option>
+                  <option>Avcılar</option><option>Bağcılar</option><option>Bahçelievler</option>
+                  <option>Bakırköy</option><option>Başakşehir</option><option>Bayrampaşa</option>
+                  <option>Beşiktaş</option><option>Beylikdüzü</option><option>Beyoğlu</option>
+                  <option>Büyükçekmece</option><option>Esenler</option><option>Esenyurt</option>
+                  <option>Eyüpsultan</option><option>Fatih</option><option>Gaziosmanpaşa</option>
+                  <option>Güngören</option><option>Kağıthane</option><option>Küçükçekmece</option>
+                  <option>Sarıyer</option><option>Silivri</option><option>Sultangazi</option>
+                  <option>Şişli</option><option>Zeytinburnu</option>
                 </optgroup>
                 <optgroup label="Anadolu Yakası">
-                  <option value="Ataşehir">Ataşehir</option>
-                  <option value="Beykoz">Beykoz</option>
-                  <option value="Çekmeköy">Çekmeköy</option>
-                  <option value="Kadıköy">Kadıköy</option>
-                  <option value="Kartal">Kartal</option>
-                  <option value="Maltepe">Maltepe</option>
-                  <option value="Pendik">Pendik</option>
-                  <option value="Sancaktepe">Sancaktepe</option>
-                  <option value="Sultanbeyli">Sultanbeyli</option>
-                  <option value="Şile">Şile</option>
-                  <option value="Tuzla">Tuzla</option>
-                  <option value="Ümraniye">Ümraniye</option>
-                  <option value="Üsküdar">Üsküdar</option>
+                  <option>Ataşehir</option><option>Beykoz</option><option>Çekmeköy</option>
+                  <option>Kadıköy</option><option>Kartal</option><option>Maltepe</option>
+                  <option>Pendik</option><option>Sancaktepe</option><option>Sultanbeyli</option>
+                  <option>Şile</option><option>Tuzla</option><option>Ümraniye</option>
+                  <option>Üsküdar</option>
                 </optgroup>
               </select>
             </div>
 
-            <!-- Notes -->
             <div class="form-group">
-              <label for="form-notes">Ölçü veya Açıklama (İsteğe Bağlı):</label>
-              <textarea id="form-notes" class="form-control" rows="3" placeholder="Örnek: Yaklaşık 3 metre en, 2.5 metre boy vitrin kepengi için..."></textarea>
+              <label for="form-notes">Açıklama <span class="optional">(isteğe bağlı)</span></label>
+              <textarea id="form-notes" class="form-control" rows="3" placeholder="Yaklaşık ölçüler, mevcut durum vb."></textarea>
             </div>
 
-            <!-- Action Buttons -->
             <div class="form-actions">
-              <button type="button" class="btn-form-wa" id="btn-submit-wa">
-                <svg class="icon-wa" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                  <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/>
-                </svg>
-                <span>WhatsApp ile Ustayla Görüş</span>
+              <button type="button" class="btn btn-accent btn-full" id="btn-submit-wa">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                WhatsApp ile Görüşün
               </button>
-              
-              <a href="tel:+905320000000" class="btn-form-call">
-                <span>📞 7/24 Doğrudan Telefon Aç</span>
+              <a href="tel:+905320000000" class="btn btn-outline btn-full">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                7/24 Telefon
               </a>
             </div>
-            
-            <p class="form-disclaimer">
-              🔒 Bilgileriniz yalnızca keşif ve teklif vermek için ustanızla paylaşılır, gizliliğiniz garantimiz altındadır.
-            </p>
           </form>
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- ==================== REFERENCES & BEFORE/AFTER GALLERY ==================== -->
-  <section class="gallery-section" id="referanslar">
-    <div class="section-container">
-      <div class="section-title-wrap text-center">
-        <span class="section-tag">TAMAMLANAN İŞLERİMİZ</span>
-        <h2 class="section-heading">Can Kepenk Montaj & Referans Galerisi</h2>
-        <p class="section-lead">
-          İstanbul'un dört bir yanında başarıyla tamamladığımız mağaza, kuyumcu, garaj ve endüstriyel kepenk projelerimiz.
-        </p>
+  <!-- FAQ -->
+  <section class="section" id="sss">
+    <div class="container">
+      <div class="section-header center">
+        <p class="section-eyebrow">S.S.S.</p>
+        <h2 class="section-title">Merak Edilenler</h2>
       </div>
 
-      <!-- Category Filter Tabs -->
-      <div class="gallery-tabs" id="gallery-tabs">
-        <button class="tab-btn active" data-filter="all">Tümü (6)</button>
-        <button class="tab-btn" data-filter="dukkan">Dükkan & Mağaza</button>
-        <button class="tab-btn" data-filter="garaj">Garaj Kapıları</button>
-        <button class="tab-btn" data-filter="endustriyel">Endüstriyel & Sanayi</button>
-      </div>
-
-      <!-- Interactive Before / After Comparison Showcase -->
-      <div class="before-after-card">
-        <div class="ba-header">
-          <span class="ba-badge">DÖNÜŞÜM HİKAYESİ</span>
-          <h3>Kadıköy Çarşı Mağaza Kepengi: Öncesi & Sonrası</h3>
-          <p>Eski, takılan ve paslanmış manuel kepenk söküldü; yerine RAL 7016 Antrasit elektrostatik fırın boyalı, sessiz motorlu Can Kepenk sistemi kuruldu.</p>
-        </div>
-
-        <div class="ba-comparator" id="ba-comparator">
-          <!-- Background Image: AFTER (Can Kepenk New System) -->
-          <div class="ba-layer ba-after">
-            <div class="ba-mockup-graphic after-graphic">
-              <div class="new-shutter-plate">CAN KEPENK MONTAJI - YENİ & GÜÇLÜ</div>
-            </div>
-            <span class="ba-label label-after">✓ SONRASI: CAN KEPENK MONTAJI</span>
-          </div>
-          
-          <!-- Foreground Image: BEFORE (Old Damaged Shutter) -->
-          <div class="ba-layer ba-before" id="ba-before-layer" style="width: 50%;">
-            <div class="ba-mockup-graphic before-graphic">
-              <div class="old-shutter-plate">ESKİ, PASLI & SIKIŞAN KEPENK</div>
-            </div>
-            <span class="ba-label label-before">✗ ÖNCESİ: ESKİ ARIZALI KEPENK</span>
-          </div>
-
-          <!-- Draggable Divider Handle -->
-          <div class="ba-handle" id="ba-handle" style="left: 50%;">
-            <div class="handle-arrow-left">◀</div>
-            <div class="handle-circle">↔</div>
-            <div class="handle-arrow-right">▶</div>
-          </div>
-        </div>
-        <p class="ba-drag-hint">↔ Çubuğu sağa sola kaydırarak öncesi ve sonrasını karşılaştırın</p>
-      </div>
-
-      <!-- Project Cards Grid -->
-      <div class="gallery-grid" id="gallery-grid">
-        
-        <div class="gallery-card" data-category="dukkan">
-          <div class="card-visual" style="background: url('assets/images/hero_shop.jpg') center/cover no-repeat;">
-            <span class="visual-tag">Kadıköy / Moda</span>
-          </div>
-          <div class="card-info">
-            <h4>Kuyumcu & Saat Mağazası Kepengi</h4>
-            <p>1.2mm galvaniz çelik, takviyeli hırsızlık emniyet kilitli tam koruma sistemi.</p>
-          </div>
-        </div>
-
-        <div class="gallery-card" data-category="dukkan">
-          <div class="card-visual" style="background: url('assets/images/hero_shop.jpg') center/cover no-repeat;">
-            <span class="visual-tag">Beşiktaş / Çarşı</span>
-          </div>
-          <div class="card-info">
-            <h4>Butik Mağaza Mikro Delikli Vitrin Kepengi</h4>
-            <p>Gece vitrin aydınlatması dışarıdan gözüken prestijli elektrostatik boyalı model.</p>
-          </div>
-        </div>
-
-        <div class="gallery-card" data-category="garaj">
-          <div class="card-visual" style="background: url('assets/images/garage_door.jpg') center/cover no-repeat;">
-            <span class="visual-tag">Ataşehir / Batı</span>
-          </div>
-          <div class="card-info">
-            <h4>Site Kapalı Otopark Giriş Sarmal Kapısı</h4>
-            <p>Emniyet fotoselli, 120 daire için yüksek frekanslı çift motorlu konfor sistemi.</p>
-          </div>
-        </div>
-
-        <div class="gallery-card" data-category="garaj">
-          <div class="card-visual" style="background: url('assets/images/garage_door.jpg') center/cover no-repeat;">
-            <span class="visual-tag">Sarıyer / Tarabya</span>
-          </div>
-          <div class="card-info">
-            <h4>Müstakil Villa Garaj Sarmal Kapısı</h4>
-            <p>Poliüretan dolgulu ısı yalıtımlı alüminyum profil ve fısıltı sessizliğinde motor.</p>
-          </div>
-        </div>
-
-        <div class="gallery-card" data-category="endustriyel">
-          <div class="card-visual" style="background: url('assets/images/industrial_door.jpg') center/cover no-repeat;">
-            <span class="visual-tag">İkitelli OSB</span>
-          </div>
-          <div class="card-info">
-            <h4>Lojistik Depo Yükleme Hangar Kepengi</h4>
-            <p>8 metre açıklıkta rüzgar kilitli çelik lameller ve zincirli sanayi tipi tüp motor.</p>
-          </div>
-        </div>
-
-        <div class="gallery-card" data-category="endustriyel">
-          <div class="card-visual" style="background: url('assets/images/industrial_door.jpg') center/cover no-repeat;">
-            <span class="visual-tag">Tuzla / Tersane</span>
-          </div>
-          <div class="card-info">
-            <h4>Ağır Sanayi İmalathane Güvenlik Kapısı</h4>
-            <p>Ağır hizmet kancalı korozyona dayanıklı galvaniz sarmal kapı sistemi.</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== 4-STEP PROCESS ==================== -->
-  <section class="process-section" id="surec">
-    <div class="section-container">
-      <div class="section-title-wrap text-center">
-        <span class="section-tag">GÜVENİLİR VE HIZLI ÇÖZÜM</span>
-        <h2 class="section-heading">Can Kepenk İle 4 Adımda İşiniz Tamam</h2>
-        <p class="section-lead">
-          Ölçümden montaja kadar her aşamada şeffaf, titiz ve söz verdiğimiz günde teslimat garantisi.
-        </p>
-      </div>
-
-      <div class="process-grid">
-        <div class="process-card">
-          <div class="step-badge">01</div>
-          <h3 class="step-title">Aynı Gün Keşif</h3>
-          <p class="step-desc">Talebinizi aldıktan hemen sonra ustanız dükkanınıza gelir, lazer ölçümle milimetrik tespit yapar ve profil numunelerini sunar.</p>
-        </div>
-
-        <div class="process-card">
-          <div class="step-badge">02</div>
-          <h3 class="step-title">Atölye İmalatı</h3>
-          <p class="step-desc">Kendi imalathanemizde 1. sınıf galvaniz çelik profiller projeye özel ebatlanır, fırın boyası atılır ve motor testleri yapılır.</p>
-        </div>
-
-        <div class="process-card">
-          <div class="step-badge">03</div>
-          <h3 class="step-title">24-48 Saatte Montaj</h3>
-          <p class="step-desc">Belirlenen saatte gelen montaj ekibimiz dükkanınıza hiçbir zarar vermeden ortalama 3-4 saat içinde anahtar teslim montajı tamamlar.</p>
-        </div>
-
-        <div class="process-card">
-          <div class="step-badge">04</div>
-          <h3 class="step-title">2 Yıl Garanti & Destek</h3>
-          <p class="step-desc">Sistem çalıştırılıp kumandalar teslim edilir. 2 yıl boyunca motor ve mekanik arızalara anında ücretsiz mobil servis verilir.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== FAQ ACCORDION ==================== -->
-  <section class="faq-section" id="sss">
-    <div class="section-container">
-      <div class="section-title-wrap text-center">
-        <span class="section-tag">MERAK EDİLENLER</span>
-        <h2 class="section-heading">Sıkça Sorulan Sorular</h2>
-        <p class="section-lead">
-          Müşterilerimizin kepenk yaptırmadan veya tamir ettirmeden önce en sık sorduğu soruların net yanıtları:
-        </p>
-      </div>
-
-      <div class="faq-accordion" id="faq-accordion">
-        
+      <div class="faq-list" id="faq-accordion">
         <div class="faq-item open">
           <button class="faq-question" aria-expanded="true">
-            <span>Elektrik kesildiğinde kepenk nasıl açılır, içeride mahsur kalır mıyım?</span>
+            <span>Elektrik kesildiğinde kepenk nasıl açılır?</span>
             <span class="faq-icon">−</span>
           </button>
-          <div class="faq-answer">
-            <p>
-              Kesinlikle mahsur kalmazsınız! Can Kepenk sistemlerimizin tamamında motorun üzerinde standart olarak bulunan <strong>manuel redüktörlü kilitli çevirme kolu</strong> yer alır. Elektrik kesildiğinde bu kol ile kepengi elinizle saniyeler içinde yukarı kaldırabilirsiniz. Ayrıca dilerseniz taktığımız <strong>akülü kepenk UPS güç kaynağı</strong> sayesinde elektrik olmasa dahi kumandadan normal şekilde 3-4 gün boyunca kepengi açıp kapatabilirsiniz.
-            </p>
-          </div>
+          <div class="faq-answer"><p>Tüm sistemlerimizde standart manuel çevirme kolu bulunur. Ek olarak akülü UPS güç kaynağı ile 72 saat kumandadan kullanım mümkündür.</p></div>
         </div>
-
         <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span>Keşif ve ölçü aldırdıktan sonra montaj kaç günde biter?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>
-              Kendi imalathanemize sahip olduğumuz için standart dükkan ve mağaza kepenklerinde ölçü alındıktan sonra <strong>en geç 24 ile 48 saat içerisinde</strong> montajı tamamlayıp kepengi çalışır halde teslim ediyoruz. Acil durumlarda aynı gün teslimat seçeneğimiz de bulunmaktadır.
-            </p>
-          </div>
+          <button class="faq-question" aria-expanded="false"><span>Montaj kaç günde tamamlanır?</span><span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>Standart kepenkler ölçü sonrası 24-48 saat içinde teslim edilir. Acil durumlarda aynı gün teslimat imkanı vardır.</p></div>
         </div>
-
         <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span>Kepenk fiyatları neye göre hesaplanır, neden sitede sabit fiyat yok?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>
-              Otomatik kepenk fiyatları; dükkan açıklığının en ve boy ölçüsüne, seçilecek çeliğin sac et kalınlığına (0.8mm - 1.2mm), montaj yapılacak duvarın yapısına ve kullanılacak motorun kaldırma torkuna göre değişir. Sabit fiyat yazan yerler genellikle iş başında ekstra masraf çıkarır. Can Kepenk olarak WhatsApp'tan bir fotoğraf veya yaklaşık ölçü attığınızda ustanız 5 dakikada en dürüst ve net fiyatı size iletir.
-            </p>
-          </div>
+          <button class="faq-question" aria-expanded="false"><span>Fiyatlar neye göre belirleniyor?</span><span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>Açıklık ölçüsü, sac kalınlığı, duvar yapısı ve motor gücüne göre. WhatsApp'tan fotoğraf veya ölçü atmanız yeterli.</p></div>
         </div>
-
         <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span>Verdiğiniz garanti neleri kapsar?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>
-              Tüm yeni imalat ve montajlarımızda <strong>2 Yıl Tam Garanti</strong> vermekteyiz. Bu garanti süresi boyunca motor arızası, elektronik alıcı beyin problemi, yay ve kılavuz aşınmaları gibi tüm durumlarda hiçbir işçilik ve parça ücreti talep etmeksizin yerinde parça değişimi yapıyoruz.
-            </p>
-          </div>
+          <button class="faq-question" aria-expanded="false"><span>Garanti neleri kapsıyor?</span><span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>2 yıl boyunca motor, elektronik, yay ve kılavuz sorunlarında hiçbir ücret almadan yerinde parça değişimi yapılır.</p></div>
         </div>
-
         <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span>Acil arıza durumunda servisiniz ne kadar sürede gelir?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>
-              İstanbul'un Avrupa ve Anadolu yakasındaki gezici mobil servis ekiplerimiz sayesinde, 7 gün 24 saat acil çağrı aldığımızda bulunduğunuz konuma ortalama <strong>30 ile 45 dakika içerisinde</strong> varış sağlıyoruz. Araçlarımızda yedek motor, alıcı kart ve lameller hazır bulunduğundan arıza aynı saatte yerinde çözülür.
-            </p>
-          </div>
+          <button class="faq-question" aria-expanded="false"><span>Acil durumda servis ne zaman gelir?</span><span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>İstanbul genelinde 7/24 acil çağrılara ortalama 30-45 dakikada müdahale edilir. Araçlarda yedek parça hazır bulunur.</p></div>
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- ==================== FOOTER & SEO DISTRICTS ==================== -->
-  <footer class="site-footer" id="iletisim">
-    <div class="footer-top">
-      <div class="footer-container">
-        
-        <!-- Brand Info -->
-        <div class="footer-col brand-col">
-          <img src="assets/logo.svg" alt="Can Kepenk Logo" width="220" height="48" class="footer-logo">
-          <p class="footer-about">
-            Can Kepenk Sistemleri; İstanbul genelinde dükkan, mağaza, fabrika ve garajlar için yüksek güvenlikli galvaniz çelik ve alüminyum otomatik kepenk imalatı, montajı ve 7/24 mobil tamir hizmeti sunmaktadır.
-          </p>
-          <div class="footer-badges">
-            <span class="f-badge">🛡️ 2 Yıl Garanti</span>
-            <span class="f-badge">⚡ 7/24 Mobil Servis</span>
-            <span class="f-badge">🏭 İmalatçı Firma</span>
-          </div>
+  <!-- FOOTER -->
+  <footer class="footer" id="iletisim">
+    <div class="footer-main">
+      <div class="container footer-grid">
+        <div class="footer-col footer-brand">
+          <img src="assets/logo.svg" alt="Can Kepenk" width="180" height="44" class="footer-logo">
+          <p>İstanbul genelinde otomatik kepenk imalatı, montajı ve 7/24 mobil tamir hizmeti.</p>
         </div>
-
-        <!-- Quick Links -->
         <div class="footer-col">
-          <h4 class="footer-col-title">Hızlı Menü</h4>
-          <ul class="footer-links">
-            <li><a href="#modeller">Kepenk Modelleri</a></li>
-            <li><a href="#simulator">Canlı Kepenk Simülatörü</a></li>
-            <li><a href="#hizmetler">7/24 Tamir & Servis</a></li>
-            <li><a href="#kesif">Ücretsiz Keşif Talebi</a></li>
-            <li><a href="#referanslar">Montaj Referansları</a></li>
-            <li><a href="#sss">Sıkça Sorulan Sorular</a></li>
+          <h4>Menü</h4>
+          <ul>
+            <li><a href="#hizmetler">Hizmetler</a></li>
+            <li><a href="#modeller">Ürünler</a></li>
+            <li><a href="#neden-biz">Neden Biz</a></li>
+            <li><a href="#referanslar">Referanslar</a></li>
+            <li><a href="#sss">S.S.S.</a></li>
           </ul>
         </div>
-
-        <!-- Services -->
         <div class="footer-col">
-          <h4 class="footer-col-title">Hizmetlerimiz</h4>
-          <ul class="footer-links">
-            <li><a href="#hizmetler">Otomatik Dükkan Kepengi</a></li>
-            <li><a href="#hizmetler">Motorlu Garaj Kapısı</a></li>
-            <li><a href="#hizmetler">Acil Kepenk Tamiri</a></li>
-            <li><a href="#hizmetler">Kepenk Motor Değişimi</a></li>
-            <li><a href="#hizmetler">Kepenk Güç Kaynağı (UPS)</a></li>
-            <li><a href="#hizmetler">Kumanda Kopyalama</a></li>
+          <h4>Hizmetler</h4>
+          <ul>
+            <li><a href="#hizmetler">Dükkan Kepengi</a></li>
+            <li><a href="#hizmetler">Garaj Kapısı</a></li>
+            <li><a href="#hizmetler">Acil Tamir</a></li>
+            <li><a href="#hizmetler">Motor Değişimi</a></li>
+            <li><a href="#hizmetler">UPS & Kumanda</a></li>
           </ul>
         </div>
-
-        <!-- Direct Contact -->
-        <div class="footer-col contact-col">
-          <h4 class="footer-col-title">İletişim & Atölye</h4>
-          <p class="contact-line"><strong>📍 Merkez Atölye:</strong> Demirciler Sanayi Sitesi, İstanbul</p>
-          <p class="contact-line"><strong>📞 7/24 Acil Çağrı:</strong> <a href="tel:+905320000000">0532 000 00 00</a></p>
-          <p class="contact-line"><strong>💬 WhatsApp Hattı:</strong> <a href="https://wa.me/905320000000" target="_blank" rel="noopener noreferrer">0532 000 00 00</a></p>
-          <p class="contact-line"><strong>✉️ E-Posta:</strong> <a href="mailto:info@cankepenk.com">info@cankepenk.com</a></p>
-          <p class="contact-line"><strong>⏱️ İmalat:</strong> 08:00 - 19:00 | <strong>Acil Servis:</strong> 7/24 Açık</p>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- Istanbul Districts SEO Tag Cloud -->
-    <div class="footer-districts">
-      <div class="districts-container">
-        <h5>📍 İstanbul Genelinde Aynı Gün Ücretsiz Keşif & 7/24 Acil Kepenk Servisi Verdiğimiz İlçeler:</h5>
-        <div class="district-tags">
-          <span>Kadıköy Kepenk Tamiri</span> • <span>Ümraniye Otomatik Kepenk</span> • <span>Şişli Dükkan Kepengi</span> • <span>Beşiktaş Kepenkçi</span> • 
-          <span>Bakırköy Otomatik Kepenk</span> • <span>Beylikdüzü Kepenk Tamiri</span> • <span>Ataşehir Garaj Kapısı</span> • <span>Fatih Kepenkçi</span> • 
-          <span>Başakşehir Sanayi Kepengi</span> • <span>İkitelli Fabrika Kepenk</span> • <span>Esenyurt Kepenk Servisi</span> • <span>Bağcılar Kepenk Tamiri</span> • 
-          <span>Maltepe Otomatik Kepenk</span> • <span>Kartal Kepenk İmalatı</span> • <span>Pendik Garaj Kapısı</span> • <span>Tuzla Tersane Kepenk</span> • 
-          <span>Zeytinburnu Kepenkçi</span> • <span>Kağıthane Otomatik Kepenk</span> • <span>Sarıyer Villa Panjur</span> • <span>Beykoz Kepenk Servisi</span> • 
-          <span>Gaziosmanpaşa Kepenk</span> • <span>Sultangazi Kepenkçi</span> • <span>Eyüpsultan Kepenk Tamiri</span> • <span>Güngören Kepenkçi</span> • 
-          <span>Bayrampaşa Otomatik Kepenk</span> • <span>Sancaktepe Kepenk Servisi</span> • <span>Çekmeköy Garaj Kapısı</span> • <span>Silivri & Büyükçekmece Kepenk</span>
+        <div class="footer-col">
+          <h4>İletişim</h4>
+          <ul class="contact-list">
+            <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Demirciler Sanayi Sitesi, İstanbul</li>
+            <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72"/></svg><a href="tel:+905320000000">0532 000 00 00</a></li>
+            <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="mailto:info@cankepenk.com">info@cankepenk.com</a></li>
+            <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>İmalat: 08:00-19:00 · Servis: 7/24</li>
+          </ul>
         </div>
       </div>
     </div>
-
-    <!-- Copyright -->
+    <div class="footer-seo">
+      <div class="container">
+        <p class="seo-title">Hizmet Verdiğimiz İlçeler</p>
+        <p class="seo-tags">Kadıköy · Ümraniye · Şişli · Beşiktaş · Bakırköy · Beylikdüzü · Ataşehir · Fatih · Başakşehir · İkitelli · Esenyurt · Bağcılar · Maltepe · Kartal · Pendik · Tuzla · Zeytinburnu · Kağıthane · Sarıyer · Beykoz · Gaziosmanpaşa · Sultangazi · Eyüpsultan · Güngören · Bayrampaşa · Sancaktepe · Çekmeköy · Silivri · Büyükçekmece</p>
+      </div>
+    </div>
     <div class="footer-bottom">
-      <div class="bottom-container">
-        <p>© 2026 Can Kepenk Sistemleri. Tüm hakları saklıdır. İstanbul Otomatik Kepenk & 7/24 Acil Servis.</p>
-        <p class="dev-credits">Resmi ve Kurumsal Web Çözümü</p>
-      </div>
+      <div class="container"><p>&copy; 2026 Can Kepenk Sistemleri. Tüm hakları saklıdır.</p></div>
     </div>
   </footer>
 
-  <!-- ==================== MOBILE FIXED BOTTOM CTA BAR ==================== -->
-  <div class="mobile-fixed-cta" id="mobile-fixed-cta">
-    <a href="tel:+905320000000" class="mobile-cta-btn btn-call">
-      <span class="m-icon">📞</span>
-      <div class="m-text">
-        <strong>7/24 USTAYI ARA</strong>
-        <small>30 Dk Acil Servis</small>
-      </div>
+  <!-- MOBILE CTA -->
+  <div class="mobile-cta" id="mobile-fixed-cta">
+    <a href="tel:+905320000000" class="mcta-btn mcta-call">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72"/></svg>
+      <strong>Ara</strong>
     </a>
-    <a href="https://wa.me/905320000000?text=Merhaba%20Can%20Kepenk,%20fiyat%20ve%20ke%C5%9Fif%20bilgisi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="mobile-cta-btn btn-wa">
-      <span class="m-icon">💬</span>
-      <div class="m-text">
-        <strong>WHATSAPP FİYAT</strong>
-        <small>Fotoğraf/Ölçü Gönder</small>
-      </div>
+    <a href="https://wa.me/905320000000?text=Merhaba%20Can%20Kepenk,%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="mcta-btn mcta-wa">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      <strong>WhatsApp</strong>
     </a>
   </div>
 
-  <!-- Scripts -->
-  <script src="js/simulator.js"></script>
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Kapat">&times;</button>
+    <div class="lightbox-content">
+      <img src="" alt="Büyük Görsel" id="lightbox-img">
+    </div>
+  </div>
   <script src="js/app.js"></script>
 </body>
 </html>

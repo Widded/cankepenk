@@ -23,6 +23,7 @@
     initGalleryFilter();
     initFaqAccordion();
     initMobileNav();
+    initLightbox();
   });
 
   // 1. HIZLI KEŞİF & WHATSAPP FORMU
@@ -193,14 +194,78 @@
 
     if (!toggle || !nav) return;
 
-    toggle.addEventListener('click', () => {
-      nav.classList.toggle('mobile-open');
+    toggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = nav.classList.toggle('mobile-open');
+      toggle.classList.toggle('active', isOpen);
+      toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     });
 
     links.forEach(link => {
       link.addEventListener('click', () => {
         nav.classList.remove('mobile-open');
+        toggle.classList.remove('active');
+        toggle.setAttribute('aria-expanded', 'false');
       });
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!nav.contains(e.target) && !toggle.contains(e.target)) {
+        nav.classList.remove('mobile-open');
+        toggle.classList.remove('active');
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        nav.classList.remove('mobile-open');
+        toggle.classList.remove('active');
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+
+  // 6. LIGHTBOX GALERİ
+  function initLightbox() {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxClose = document.getElementById('lightbox-close');
+    const galleryCards = document.querySelectorAll('.gallery-card');
+
+    if (!lightbox || !lightboxImg || !galleryCards.length) return;
+
+    galleryCards.forEach(card => {
+      card.addEventListener('click', () => {
+        const visual = card.querySelector('.card-visual');
+        if (visual) {
+          const bg = visual.style.backgroundImage;
+          const urlMatch = bg.match(/url\(["']?(.*?)["']?\)/);
+          if (urlMatch && urlMatch[1]) {
+            lightboxImg.src = urlMatch[1];
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+          }
+        }
+      });
+      card.style.cursor = 'pointer';
+    });
+
+    const closeLightbox = () => {
+      lightbox.classList.remove('active');
+      document.body.style.overflow = '';
+      setTimeout(() => { lightboxImg.src = ''; }, 300);
+    };
+
+    lightboxClose.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) closeLightbox();
+    });
+    
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+        closeLightbox();
+      }
     });
   }
 
