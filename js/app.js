@@ -10,9 +10,9 @@
   // Telefon ve WhatsApp numaralarını buradan tek seferde değiştirebilirsiniz:
   const CONFIG = {
     companyName: 'Can Kepenk Sistemleri',
-    phoneDisplay: '0532 000 00 00',
-    phoneClean: '+905320000000',
-    whatsappNumber: '905320000000',
+    phoneDisplay: '0505 447 13 56',
+    phoneClean: '+905054471356',
+    whatsappNumber: '905054471356',
     city: 'İstanbul'
   };
 
