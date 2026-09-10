@@ -7,6 +7,11 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
+      <image:loc>https://cankepenk.com/assets/images/hero-kepenk.jpg</image:loc>
+      <image:title>İstanbul Otomatik Sarmal Kepenk İmalatı ve Montajı</image:title>
+      <image:caption>Can Kepenk - İstanbul geneli 2 yıl garantili otomatik sarmal kepenk montajı</image:caption>
+    </image:image>
+    <image:image>
       <image:loc>https://cankepenk.com/assets/images/kepenk-ref-9.jpg</image:loc>
       <image:title>İstanbul Galvaniz Çelik Otomatik Dükkan Kepengi Montajı</image:title>
       <image:caption>Can Kepenk - İstanbul geneli 2 yıl garantili galvaniz çelik otomatik kepenk imalatı ve montajı</image:caption>
