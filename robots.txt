@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /dev-server.js
+Disallow: /vercel.json
+Disallow: /.vercelignore
+
+Sitemap: https://cankepenk.com/sitemap.xml
