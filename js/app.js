@@ -19,11 +19,14 @@
   // --- DOMContentLoaded INIT ---
   document.addEventListener('DOMContentLoaded', () => {
     initWhatsAppForm();
+    initHeroSlider();
+    initMobileHeroStats();
     initBeforeAfterSlider();
     initGalleryFilter();
     initFaqAccordion();
     initMobileNav();
     initLightbox();
+    initHeaderScroll();
   });
 
   // 1. HIZLI KEŞİF & WHATSAPP FORMU
@@ -63,7 +66,79 @@
     });
   }
 
-  // 2. ÖNCESİ / SONRASI İNTERAKTİF KAYDIRICI (BEFORE/AFTER SLIDER)
+  // 2. MOBİL HERO ARKA PLAN SLAYTI
+  function initHeroSlider() {
+    const slides = document.querySelectorAll('.hero-mobile-slide');
+    if (slides.length < 2) return;
+
+    const mobileQuery = window.matchMedia('(max-width: 768px)');
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const INTERVAL = 4500;
+    let index = 0;
+    let timer = null;
+
+    function showSlide(nextIndex) {
+      slides[index].classList.remove('active');
+      index = nextIndex;
+      slides[index].classList.add('active');
+    }
+
+    function start() {
+      if (timer || !mobileQuery.matches || reduceMotion.matches) return;
+      timer = window.setInterval(() => {
+        showSlide((index + 1) % slides.length);
+      }, INTERVAL);
+    }
+
+    function stop() {
+      if (timer) {
+        window.clearInterval(timer);
+        timer = null;
+      }
+    }
+
+    function sync() {
+      if (mobileQuery.matches && !document.hidden) {
+        start();
+      } else {
+        stop();
+      }
+    }
+
+    document.addEventListener('visibilitychange', sync);
+    mobileQuery.addEventListener('change', sync);
+    reduceMotion.addEventListener('change', sync);
+    sync();
+  }
+
+  // 3. MOBİLDE İSTATİSTİKLERİ HİZMETLER ÜSTÜNE TAŞI
+  function initMobileHeroStats() {
+    const stats = document.querySelector('.hero-stats');
+    const servicesContainer = document.querySelector('#hizmetler .container');
+    if (!stats || !servicesContainer) return;
+
+    const servicesHeader = servicesContainer.querySelector('.section-header');
+    const originalParent = stats.parentNode;
+    const originalNext = stats.nextSibling;
+    const mobileQuery = window.matchMedia('(max-width: 768px)');
+
+    function place() {
+      if (mobileQuery.matches) {
+        if (stats.parentNode !== servicesContainer) {
+          stats.classList.add('hero-stats--inline');
+          servicesContainer.insertBefore(stats, servicesHeader);
+        }
+      } else if (stats.parentNode !== originalParent) {
+        stats.classList.remove('hero-stats--inline');
+        originalParent.insertBefore(stats, originalNext);
+      }
+    }
+
+    mobileQuery.addEventListener('change', place);
+    place();
+  }
+
+  // 4. ÖNCESİ / SONRASI İNTERAKTİF KAYDIRICI (BEFORE/AFTER SLIDER)
   function initBeforeAfterSlider() {
     const container = document.getElementById('ba-comparator');
     const beforeLayer = document.getElementById('ba-before-layer');
@@ -120,7 +195,7 @@
     });
   }
 
-  // 3. REFERANS GALERİ FİLTRESİ
+  // 5. REFERANS GALERİ FİLTRESİ
   function initGalleryFilter() {
     const tabs = document.querySelectorAll('#gallery-tabs .tab-btn');
     const cards = document.querySelectorAll('#gallery-grid .gallery-card');
@@ -154,7 +229,7 @@
     });
   }
 
-  // 4. SSS AKORDİYON
+  // 6. SSS AKORDİYON
   function initFaqAccordion() {
     const items = document.querySelectorAll('#faq-accordion .faq-item');
 
@@ -186,47 +261,46 @@
     });
   }
 
-  // 5. MOBİL GEZİNTİ MENÜSÜ
+  // 7. MOBİL GEZİNTİ MENÜSÜ
   function initMobileNav() {
     const toggle = document.getElementById('mobile-toggle');
     const nav = document.getElementById('nav-menu');
+    const header = document.getElementById('header');
     const links = document.querySelectorAll('.nav-link');
 
     if (!toggle || !nav) return;
+
+    function closeMenu() {
+      nav.classList.remove('mobile-open');
+      toggle.classList.remove('active');
+      toggle.setAttribute('aria-expanded', 'false');
+      if (header) header.classList.remove('menu-open');
+    }
 
     toggle.addEventListener('click', (e) => {
       e.stopPropagation();
       const isOpen = nav.classList.toggle('mobile-open');
       toggle.classList.toggle('active', isOpen);
       toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      if (header) header.classList.toggle('menu-open', isOpen);
     });
 
     links.forEach(link => {
-      link.addEventListener('click', () => {
-        nav.classList.remove('mobile-open');
-        toggle.classList.remove('active');
-        toggle.setAttribute('aria-expanded', 'false');
-      });
+      link.addEventListener('click', closeMenu);
     });
 
     document.addEventListener('click', (e) => {
       if (!nav.contains(e.target) && !toggle.contains(e.target)) {
-        nav.classList.remove('mobile-open');
-        toggle.classList.remove('active');
-        toggle.setAttribute('aria-expanded', 'false');
+        closeMenu();
       }
     });
 
     document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') {
-        nav.classList.remove('mobile-open');
-        toggle.classList.remove('active');
-        toggle.setAttribute('aria-expanded', 'false');
-      }
+      if (e.key === 'Escape') closeMenu();
     });
   }
 
-  // 6. LIGHTBOX GALERİ
+  // 8. LIGHTBOX GALERİ
   function initLightbox() {
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightbox-img');
@@ -267,6 +341,19 @@
         closeLightbox();
       }
     });
+  }
+
+  // 9. MOBİL ŞEFFAF HEADER (KAYDIRINCA ZEMİN KAZANIR)
+  function initHeaderScroll() {
+    const header = document.getElementById('header');
+    if (!header) return;
+
+    const onScroll = () => {
+      header.classList.toggle('scrolled', window.scrollY > 160);
+    };
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
   }
 
 })();
