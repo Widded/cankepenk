@@ -3,9 +3,14 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://cankepenk.com/</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://cankepenk.com/assets/images/og-image.jpeg</image:loc>
+      <image:title>Can Kepenk Endüstriyel Kepenk Montajı</image:title>
+      <image:caption>Can Kepenk ekibi tarafından çelik konstrüksiyon yapıda endüstriyel kepenk montajı</image:caption>
+    </image:image>
     <image:image>
       <image:loc>https://cankepenk.com/assets/images/kepenk-ref-9.jpg</image:loc>
       <image:title>İstanbul Galvaniz Çelik Otomatik Dükkan Kepengi Montajı</image:title>
