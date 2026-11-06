@@ -304,6 +304,7 @@
   function initLightbox() {
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxCaption = document.getElementById('lightbox-caption');
     const lightboxClose = document.getElementById('lightbox-close');
     const galleryCards = document.querySelectorAll('.gallery-card');
 
@@ -311,24 +312,27 @@
 
     galleryCards.forEach(card => {
       card.addEventListener('click', () => {
-        const visual = card.querySelector('.card-visual');
-        if (visual) {
-          const bg = visual.style.backgroundImage;
-          const urlMatch = bg.match(/url\(["']?(.*?)["']?\)/);
-          if (urlMatch && urlMatch[1]) {
-            lightboxImg.src = urlMatch[1];
-            lightbox.classList.add('active');
-            document.body.style.overflow = 'hidden';
-          }
+        const img = card.querySelector('.gallery-media img');
+        if (!img) return;
+
+        const title = card.querySelector('.gallery-title');
+        lightboxImg.src = img.currentSrc || img.src;
+        lightboxImg.alt = img.alt || 'Büyük Görsel';
+        if (lightboxCaption) {
+          lightboxCaption.textContent = title ? title.textContent : '';
         }
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden';
       });
-      card.style.cursor = 'pointer';
     });
 
     const closeLightbox = () => {
       lightbox.classList.remove('active');
       document.body.style.overflow = '';
-      setTimeout(() => { lightboxImg.src = ''; }, 300);
+      setTimeout(() => {
+        lightboxImg.src = '';
+        if (lightboxCaption) lightboxCaption.textContent = '';
+      }, 300);
     };
 
     lightboxClose.addEventListener('click', closeLightbox);
