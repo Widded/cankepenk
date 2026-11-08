@@ -55,7 +55,7 @@ body {
 ::-webkit-scrollbar-thumb:hover { background: #999; }
 
 a { color: inherit; text-decoration: none; transition: color var(--transition); }
-img, svg { display: block; max-width: 100%; }
+img, svg { display: block; max-width: 100%; height: auto; }
 button, input, select, textarea { font-family: inherit; font-size: inherit; color: inherit; outline: none; border: none; background: none; }
 ul { list-style: none; }
 
@@ -916,7 +916,7 @@ textarea.form-control { resize: vertical; }
 .footer-logo { margin-bottom: 14px; filter: brightness(0) invert(1); opacity: 0.7; height: 32px; width: auto; }
 .footer-brand p { font-size: 0.8125rem; line-height: 1.65; }
 
-.footer-col h4 {
+.footer-col h3 {
   font-family: var(--font-heading);
   font-size: 0.75rem;
   font-weight: 700;
@@ -1720,3 +1720,43 @@ textarea.form-control { resize: vertical; }
   .error-actions { flex-direction: column; width: 100%; }
   .error-actions .btn { width: 100%; justify-content: center; }
 }
+
+
+/* ILCE-SEO */
+.ilce-seo .ilce-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;margin-top:28px}
+.ilce-link{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:12px 14px;background:var(--bg-warm);border:1px solid var(--border);border-radius:var(--radius);font-weight:600;font-size:.9rem;color:var(--ink);transition:all var(--transition)}
+.ilce-link::after{content:'\2192';color:var(--accent);opacity:.6;transition:transform var(--transition)}
+.ilce-link:hover{border-color:var(--accent);background:var(--accent-subtle);color:var(--accent)}
+.ilce-link:hover::after{transform:translateX(3px);opacity:1}
+.ilce-header{position:sticky;top:0;z-index:50;background:rgba(20,20,20,.96);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,.08)}
+.ilce-header .wrap{max-width:var(--max-w);margin:0 auto;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.ilce-header img{height:40px;width:auto}
+.ilce-header .acts{display:flex;gap:10px}
+.ilce-hbtn{display:inline-flex;align-items:center;gap:6px;padding:9px 16px;border-radius:var(--radius-full);font-weight:600;font-size:.85rem}
+.ilce-hbtn.call{background:#fff;color:var(--ink)}
+.ilce-hbtn.wa{background:#25D366;color:#fff}
+.ilce-article{padding:40px 0 60px}
+.ilce-article .container{max-width:860px}
+.ilce-breadcrumb{font-size:.8rem;color:var(--ink-muted);margin-bottom:18px}
+.ilce-breadcrumb a{color:var(--accent)}
+.ilce-article h1{font-family:var(--font-heading);font-size:clamp(1.8rem,5vw,2.6rem);line-height:1.15;margin-bottom:16px}
+.ilce-article h2{font-family:var(--font-heading);font-size:1.4rem;margin:32px 0 12px}
+.ilce-article p{color:var(--ink-secondary);line-height:1.75;margin-bottom:14px}
+.ilce-article .lead{font-size:1.1rem;color:var(--ink);margin-bottom:24px}
+.ilce-article ul.svc{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin:18px 0}
+.ilce-article ul.svc li{padding:12px 14px;background:var(--bg-warm);border:1px solid var(--border);border-radius:var(--radius);font-size:.92rem;font-weight:500}
+.ilce-cta{margin:34px 0;padding:28px;background:var(--bg-dark);border-radius:var(--radius-md);text-align:center}
+.ilce-cta h3{color:#fff;font-family:var(--font-heading);font-size:1.5rem;margin-bottom:8px}
+.ilce-cta p{color:var(--ink-dim);margin-bottom:18px}
+.ilce-cta .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.ilce-cta a{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:var(--radius-full);font-weight:600}
+.ilce-cta a.call{background:var(--accent);color:#fff}
+.ilce-cta a.wa{background:#25D366;color:#fff}
+.ilce-near{margin-top:40px;padding-top:28px;border-top:1px solid var(--border)}
+.ilce-near h2{font-size:1.1rem;margin-bottom:14px}
+.ilce-near .links{display:flex;flex-wrap:wrap;gap:8px}
+.ilce-near a{padding:8px 14px;background:var(--bg-warm);border:1px solid var(--border);border-radius:var(--radius-full);font-size:.85rem;font-weight:500;color:var(--ink);transition:all var(--transition)}
+.ilce-near a:hover{border-color:var(--accent);color:var(--accent)}
+.ilce-foot{background:var(--bg-dark);color:var(--ink-dim);padding:30px 20px;text-align:center;font-size:.85rem}
+.ilce-foot a{color:#fff}
+.ilce-foot .row{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;margin-bottom:10px}
